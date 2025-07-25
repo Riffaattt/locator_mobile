@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var registerNavButton: Button
 
     private val client = OkHttpClient()
-    private val loginUrl = "https://eec44f337f52.ngrok-free.app/api/auth/login"
+    private val loginUrl = "https://b3431b5205af.ngrok-free.app/api/auth/login"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

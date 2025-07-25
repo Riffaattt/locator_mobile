@@ -39,7 +39,7 @@ class HomeActivity : AppCompatActivity() {
 
     private lateinit var sharedPreferences: SharedPreferences
     private val sharedPrefKey = "user_prefs"
-    private val locationApiUrl = "https://eec44f337f52.ngrok-free.app/api/location/update"
+    private val locationApiUrl = "https://b3431b5205af.ngrok-free.app/api/location/update"
     private val firestore = FirebaseFirestore.getInstance()
     private var firestoreListener: ListenerRegistration? = null
 
