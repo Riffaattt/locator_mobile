@@ -18,7 +18,7 @@ class RegisterActivity : AppCompatActivity() {
     private lateinit var registerButton: Button
 
     private val client = OkHttpClient()
-    private val baseUrl = "https://b3431b5205af.ngrok-free.app/api/auth/register"
+    private val baseUrl = "https://5c1e2fdf704b.ngrok-free.app/api/auth/register"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

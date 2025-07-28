@@ -39,7 +39,7 @@ class HomeActivity : AppCompatActivity() {
 
     private lateinit var sharedPreferences: SharedPreferences
     private val sharedPrefKey = "user_prefs"
-    private val locationApiUrl = "https://b3431b5205af.ngrok-free.app/api/location/update"
+    private val locationApiUrl = "https://5c1e2fdf704b.ngrok-free.app/api/location/update"
     private val firestore = FirebaseFirestore.getInstance()
     private var firestoreListener: ListenerRegistration? = null
 
@@ -48,7 +48,8 @@ class HomeActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
-
+        val intent = Intent(this, LocationService::class.java)
+        ContextCompat.startForegroundService(this, intent)
         latitudeTextView = findViewById(R.id.latitudeTextView)
         longitudeTextView = findViewById(R.id.longitudeTextView)
         addressTextView = findViewById(R.id.addressTextView)

@@ -26,7 +26,7 @@ class LocationService : Service() {
     private var firestoreListener: ListenerRegistration? = null
     private val firestore = FirebaseFirestore.getInstance()
     private val client = OkHttpClient()
-    private val locationApiUrl = "https://b3431b5205af.ngrok-free.app/api/location/update"
+    private val locationApiUrl = "https://5c1e2fdf704b.ngrok-free.app/api/location/update"
 
     override fun onCreate() {
         super.onCreate()
